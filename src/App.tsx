@@ -1,15 +1,12 @@
-import React from 'react';
+import React from "react";
 import { GeolocatedProps, geolocated } from "react-geolocated";
-import './App.css';
-import WeatherComponent from './Components/WeatherComponent';
-import { fetchAddition } from './Api/ApiCall';
+import { fetchSingleDay } from "./Api/ApiCall";
+import "./App.css";
+import WeatherComponent from "./Components/WeatherComponent";
 
 class App extends React.Component {
-  //const c = fetchAddition("calgary", "C");
   render() {
-    return (
-      <WeatherComponent/>
-    );
+    return <WeatherComponent />;
   }
 }
 
